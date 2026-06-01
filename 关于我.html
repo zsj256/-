@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>首页 | or-giraffe张思佳</title>
+		<style>
+			 * {
+			     margin: 0;
+			     padding: 0;
+			     box-sizing: border-box;
+			     font-family: "微软雅黑", sans-serif;
+			    }
+			
+			    body {background-color: #fff;}
+				header {
+				    background-color: #fef2f6;
+				    padding: 10px 20px;
+				    border-bottom: 1px solid #f8d7e0;
+				}
+				
+				.nav-container {
+				     max-width: 1200px;
+				     margin: 0 auto;
+				     display: flex;
+				     justify-content: space-between;
+				     align-items: center;
+				}
+				
+				.logo {
+				     color: #333;
+				     font-size: 14px;
+				}
+				
+				nav ul {
+				     display: flex;
+				     gap: 30px;
+				     list-style: none;
+				}
+				
+				nav a {
+				      text-decoration: none;
+				      color: #333;
+				      font-size: 14px;
+				      transition: color 0.3s;
+				}
+				
+				nav a:hover {
+				     color: #e88ea3;
+				}
+				.hero {
+				    background-color: #fcdde6;
+				    min-height: 80vh;
+				    position: relative;
+				    display: flex;
+				    flex-direction: column;
+				    align-items: center;
+				    justify-content: center;
+				    padding: 40px 20px;
+				    overflow: hidden;
+				}
+				   .hero::before, .hero::after,
+				        .decor-1, .decor-2, .decor-3, .decor-4 {
+				            content: "";
+				            position: absolute;
+				            width: 100px;
+				            height: 100px;
+				            background-size: contain;
+				            background-repeat: no-repeat;
+				            opacity: 0.7;
+				        }
+				
+				        .decor-1 {
+				            top: 15%;
+				            left: 10%;
+				            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23e88ea3"><path d="M20,30 Q30,20 40,30 T60,30" stroke="%23e88ea3" fill="none" stroke-width="2"/><path d="M70,20 Q80,30 70,40" stroke="%23e88ea3" fill="none" stroke-width="2"/></svg>');
+				        }
+				
+				        .decor-2 {
+				            top: 15%;
+				            right: 10%;
+				            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23e88ea3"><path d="M20,20 L30,30 L20,40" stroke="%23e88ea3" fill="none" stroke-width="2"/><path d="M50,20 Q60,30 50,40" stroke="%23e88ea3" fill="none" stroke-width="2"/></svg>');
+				        }
+				
+				        .decor-3 {
+				            bottom: 20%;
+				            left: 10%;
+				            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23e88ea3"><path d="M20,60 Q30,50 40,60 T60,60" stroke="%23e88ea3" fill="none" stroke-width="2"/><path d="M70,60 L80,70 L70,80" stroke="%23e88ea3" fill="none" stroke-width="2"/></svg>');
+				        }
+				
+				        .decor-4 {
+				            bottom: 20%;
+				            right: 10%;
+				            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23e88ea3"><path d="M20,50 L30,40 L40,50" stroke="%23e88ea3" fill="none" stroke-width="2"/><path d="M50,60 Q60,70 50,80" stroke="%23e88ea3" fill="none" stroke-width="2"/></svg>');
+				        }
+					 .avatar {
+					            width: 100px;
+					            height: 100px;
+					            border-radius: 50%;
+					            background-color: #fff;
+					            display: flex;
+					            align-items: center;
+					            justify-content: center;
+					            margin-bottom: 15px;
+					            overflow: hidden;
+					            border: 3px solid #f8d7e0;
+					        }
+					
+					        .avatar img {
+					            width: 100%;
+					            height: 100%;
+					            object-fit: cover;
+					        }
+					        .name {
+					            font-size: 20px;
+					            color: #333;
+					            margin-bottom: 15px;
+					        }
+					
+					        .tagline {
+					            background-color: #fff;
+					            padding: 8px 20px;
+					            border-radius: 20px;
+					            font-size: 13px;
+					            color: #666;
+					            margin-bottom: 25px;
+					            border: 1px solid #e88ea3;
+					        }
+					        .buttons {
+					            display: flex;
+					            gap: 15px;
+					        }
+					
+					        .btn {
+					            padding: 8px 20px;
+					            border: 1px solid #e88ea3;
+					            border-radius: 20px;
+					            background-color: #fff;
+					            color: #333;
+					            text-decoration: none;
+					            font-size: 13px;
+					            transition: all 0.3s;
+					        }
+					
+					        .btn:hover {
+					            background-color: #e88ea3;
+					            color: #fff;
+					        }
+					        footer {
+					            text-align: center;
+					            padding: 20px;
+					            font-size: 12px;
+					            color: #666;
+					            background-color: #fff;
+					        }
+					    </style>
+					</head>
+					<body>
+					    <header>
+					        <div class="nav-container">
+					            <div class="logo">or giraffe张思佳</div>
+					            <nav>
+					                <ul>
+					                    <li><a href=" ">首页</a ></li>
+					                    <li><a href="关于我.html">自我介绍</a ></li>
+					                    <li><a href="联系我.html">联系方式</a ></li>
+					                </ul>
+					            </nav>
+					        </div>
+					    </header>
+					    <section class="hero">
+					        <div class="avatar">
+					        <img src="./img/自己照片.jpg" alt="">    
+					        </div>
+					        <div class="name">or-giraffe张思佳</div>
+					        <div class="tagline">别管我今天是谁，我想成为一个更好的自己。</div>
+					        <div class="buttons">
+					            <a href="关于我.html" class="btn">关于我</a >
+					            <a href="个人意识.html" class="btn">个人意识</a >
+					            <a href="思考笔记.html" class="btn">思考笔记</a >
+					        </div>
+					    </section>
+					    <footer>
+					        <font face="黑体" size="5">&copy;2025 xxx 视觉传达交互二班 | 山东文化艺术职业学院<br>作品集个人简介 | 保持创造，时序迭代</font>
+					    </footer>
+					</body>
+					</html>
